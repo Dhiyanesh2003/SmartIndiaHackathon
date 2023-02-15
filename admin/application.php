@@ -219,13 +219,6 @@
         word-wrap: normal
     }
 
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-        -webkit-appearance: button
-    }
-
     button:not(:disabled),
     [type="button"]:not(:disabled),
     [type="reset"]:not(:disabled),
@@ -246,13 +239,6 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         padding: 0
-    }
-
-    input[type="date"],
-    input[type="time"],
-    input[type="datetime-local"],
-    input[type="month"] {
-        -webkit-appearance: listbox
     }
 
     textarea {
@@ -290,7 +276,6 @@
 
     [type="search"] {
         outline-offset: -2px;
-        -webkit-appearance: none
     }
 
     [type="search"]::-webkit-search-decoration {
