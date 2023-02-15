@@ -1,0 +1,227 @@
+<html>
+<head>
+	<link rel="stylesheet" href="../chatbot/static/css/chat.css">
+    <link rel="stylesheet" href="../chatbot/static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KheloIndia - Dashboard</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+	<style>
+		body{
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(128, 255, 255));
+    background-attachment: fixed;
+		}
+		.policy{
+			display:grid;
+			
+			background-color:#fcfcfc;
+			margin-right:20%;
+			margin-left:20%;
+			padding:25px;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			margin-bottom:100px;
+			margin-top:100px;
+			border-radius:10px;
+		}
+		p{
+			font-size:20px;
+			font-family: sans-serif;
+
+		}
+		.note{
+				margin-left:45%;
+		}
+		.option{
+			margin-left:75%;
+		}
+		#submit{	
+				height:50px;
+				width:200px;
+				border-radius:15px;
+		}
+			
+	   body{
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper{
+/* position:fixed;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  */
+  transform: translate(-50%, -50%)
+}
+
+.link_wrapper {
+  position: relative;
+}
+
+a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+a:hover{
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+a:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}	
+	</style>
+</head>
+<body>
+	<div class="policy">
+		<div class="sub">
+			<h2><u><center>Guidelines for completing the application form at Annexure</u></center></h2>
+			<p>1. Due care may be taken while filling the application form.</p>
+			<p>2. The weightage will be applied on the respective details provided in the application form.</p>
+			<p>3. The project proposal will be selected through challenge method from amongst the group of states decided by the DPAC.</p>
+			<p>4. Mere indication in the application form without any details may not fetch a higherweightage. 
+				For example, in S. No. 6relating to connectivity (Road/Rail/Air/Seaport), just indicating that well connected will not be accepted. 
+				The distance between the place where the sports infrastructure project is proposed to be created and Road/Rail/Airport
+				shall be mentioned clearly.</p>
+			<p>5. If the proposal is forwarded by Sports Council/Authority, the Application and Certificate shall be signed by the Secretary of the Council/Authority
+			and countersigned by Principal Secretary/Secretary of Department of Sports.</p>
+			<p>6. If the proposal is forwarded by a School /College/ University, the Application and
+				  Certificate shall be signed by the Principal / Vice - Chancellor respectively and
+				  countersigned by the Principal Secretary/Secretary of Department of Sports of the
+				  respective State Govt.</p>
+			<p>7. If the proposal is forwarded by a Local Body/ Sports Control Board, the Application and
+				  Certificate shall be signed by the Commissioner / Secretary in charge respectively and
+				  countersigned by the Principal Secretary/Secretary of Department of Sports of the
+				  respective State Govt.</p>
+			<p>8. If the proposal is from an Organization under Central Govt., the Application and
+				  Certificate may be signed by the authorized officer of the organization and countersigned
+                  by Head of the organization.</p>
+			<hr>
+		</div>
+		
+		<div class="note">
+			<h3><u>NOTE!</u></h3>
+		</div>
+		
+		<div class="funding">
+			<h4>WHAT TYPE OF PROJECTS WILL BE FUNDED?</h4>
+			<ul>
+				<li>Synthetic Athletic Track</li>
+				<li> Synthetic Hockey field with lighting</li>
+				<li>Synthetic turf football ground with running track and lighting</li>
+				<li>Multipurpose Hall of size 60M x 40M x 12.5M with facilities for Badminton, Volleyball, Judo,Wrestling, Handball, Kabaddi, or any other
+					priority sports discipline which is popular in the
+					said University
+				</li>
+				<li>Swimming Pool (including all weather swimmingpool)</li>
+				<li>Setting up of Human Performance and Recovery Laboratory</li>
+			</ul>
+		</div>
+		<br><br>
+		<div class="option">
+			<form name="form" method="post" action="user_application.php" enctype="multipart/form-data" >
+				<input type="text" name="id" disabled hidden>
+				<div class="wrapper">
+                   <div class="link_wrapper">
+                   <a href="user_application.html">Accept & Continue</a>
+                    <div class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                     <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                     </svg>
+                    </div>
+                    </div>
+  
+                </div>
+			</form>
+			
+		</div>
+	</div>
+</body>
+<body>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="intro">
+            Hi !! I am here to assist you !!
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../chatbot/static/scripts/responses.js"></script>
+<script src="../chatbot/static/scripts/chat.js"></script>
+</html>

@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+            .input{
+                padding: 15px;
+                border-radius: 5px;
+                width: 250px;
+                border: 1px solid black;
+            }
+            .inputt{
+                height: 20px;
+                width: 20px;
+            }
+            .inpu{
+                font-size: 20px;
+            }
+            #inn1,#inn2,#inn3,#inn4{
+                border: 3px solid aliceblue;
+                width: 250px;
+            }
+            .padd{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            [contenteditable] {
+                outline: 0px solid transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <form action="">
+
+                <!--Text Field-->
+                <label>Name <span style="color: red;">*</span></label>
+                <br><br>
+                <div id="inn1">
+                    <input name="name" id="in1" autocomplete="off" contenteditable="true" onclick="disappear(1)" onfocusout="appear(1)" class="input" type="text" placeholder="Enter Name">
+                </div>
+                <br><br>
+
+                <!--Password Field-->
+                <label>Password <span style="color: red;">*</span></label><br><br>
+                <div id="inn2">
+                    <input name="password" id="in2" autocomplete="off" contenteditable="true" onclick="disappear(2)" onfocusout="appear(2)" class="input" type="password" placeholder="Enter Password">
+                </div>
+                <br><br>
+
+                <!--Dropdown-->
+                <label>State <span style="color: red;">*</span></label><br><br>
+                <div id="inn4">
+                    <select name="dob" id="in5" autocomplete="off" contenteditable="true" onclick="disappear(5)" onfocusout="appear(5)" class="input">
+                        <div class="padd"><option selected disabled value="volvo">Select State</option></div>
+                        <div class="padd"><option value="saab">TN</option></div>
+                        <div class="padd"><option value="mercedes">KL</option></div>
+                        <div class="padd"><option value="audi">PY</option></div>
+                    </select>
+                </div>
+                <br><br>
+                
+                <!--Text Area-->
+                <label>Address <span style="color: red;">*</span></label><br><br>
+                <div id="inn3">
+                    <textarea style="resize:none" rows="5" name="Address" id="in3" autocomplete="off" contenteditable="true" onclick="disappear(3)" onfocusout="appear(3)" class="input" placeholder="Enter Address"></textarea>
+                </div>
+                <br><br>
+
+                <!--Radio Button-->
+                <label>Gender <span style="color: red;">*</span></label>
+                <br><br>
+                <input type="radio" id="male" class="inputt" name="gender" value="Male">
+                <label for="male" class="inpu">Male</label>
+                <br><br>
+                <input type="radio" id="female" class="inputt" name="gender" value="Female">
+                <label for="female" class="inpu">Female</label>
+                <br><br>
+                <input type="radio" id="Others" class="inputt" name="gender" value="Others">
+                <label for="Others" class="inpu">Others</label>
+                <br><br>
+
+                <!--Checkbox-->
+                <label>Sport</label>
+                <br><br>
+                <input type="checkbox" id="Tennis" class="inputt" name="sport" value="Tennis">
+                <label for="Tennis" class="inpu">Tennis</label>
+                <br><br>
+                <input type="checkbox" id="Cricket" class="inputt" name="sport" value="Cricket">
+                <label for="Cricket" class="inpu">Cricket</label>
+                <br><br>
+                <input type="checkbox" id="Hockey" class="inputt" name="sport" value="Hockey">
+                <label for="Hockey" class="inpu">Hockey</label>
+                <br><br>
+
+                <!--Date-->
+                <label>DOB <span style="color: red;">*</span></label><br><br>
+                <div id="inn4">
+                    <input name="dob" id="in4" autocomplete="off" contenteditable="true" onclick="disappear(4)" onfocusout="appear(4)" class="input" type="date" placeholder="Enter DOB">
+                </div>
+                <br><br>
+
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+    <script>
+        function disappear(id){
+            console.log("in"+id);
+            document.getElementById("in"+id).style.border = "3px solid green";
+            document.getElementById("inn"+id).style.border = "1px solid aliceblue";
+        }
+        function appear(id){
+            var x = document.getElementById("in"+id).value;
+            console.log(x);
+            if(x){
+                console.log("in"+id);
+                document.getElementById("in"+id).style.border = "1px solid black";
+                document.getElementById("inn"+id).style.border = "3px solid aliceblue";
+            }
+            else{
+                console.log("uhvosovjsovjsoi");
+                document.getElementById("in"+id).style.border = "3px solid red";
+                document.getElementById("inn"+id).style.border = "1px solid aliceblue";
+            }
+        }
+    </script>
+</html>

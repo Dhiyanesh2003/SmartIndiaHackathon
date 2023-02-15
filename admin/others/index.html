@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            .main_cont{
+                display: grid;
+                grid-template-columns: 1fr 7fr;
+                height: 100vh;
+            }
+            .left{
+                background-color: #40404A;
+                color: rgb(240, 238, 238);
+            }
+            .logo{
+                margin-top: 10px;
+                height: 100px;
+                width: 100px;
+                padding: 15px;
+            }
+            .opt{
+                background-color: #40404A;
+                border: none;
+                color: rgb(240, 238, 238);
+                font-size: 18px;
+                width: 100%;
+                height: 30px;
+                text-align: left;
+                opacity: 0.8;
+            }
+            .opt:hover{
+                /*background-color: #3F4049;*/
+                background-color: #3F4049;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <form name="form" method="post" action="data_retreive.php" enctype="multipart/form-data" >
+                <label for="addln1">ID : </label>
+                <input type="text" id="fn2" name="id" style="margin-top:10px;" placeholder="Eg: 2/179"><br><br>
+                <input id="submit" type="submit" name="submit" value="Apply"/>
+            </form>
+        </main>
+    </body>
+</html>

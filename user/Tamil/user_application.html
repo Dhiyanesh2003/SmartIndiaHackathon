@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/black/OneDrive/Desktop/1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Application</title>
+    <link rel="stylesheet" href="../chatbot/static/css/chat.css">
+    <link rel="stylesheet" href="../chatbot/static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3GgyYDRgIJJ6F5VbFb76SvffP-ka6qVH6zg&usqp=CAU");*/
+            background:blue;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(128, 255, 255));
+    background-attachment: fixed;
+        }
+        
+        .input{
+            padding: 15px;
+            border-radius: 5px;
+            width: 250px;
+            border: 1px solid black;
+        }
+        .inputt{
+            height: 20px;
+            width: 20px;
+        }
+        .inpu{
+            font-size: 20px;
+        }
+        #inn1,#inn2,#inn3,#inn4{
+            border: 3px solid white;
+            width: 250px;
+        }
+        .padd{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        [contenteditable] {
+            outline: 0px solid transparent;
+        }
+    </style>
+    <style>
+            body{
+                background-color:#d3d3d3;
+               
+                
+            }
+            h2{
+                margin-left: 100%;
+            }
+            .container{
+                justify-content: center;
+            }
+            .input{
+                padding: 15px;
+                border-radius: 5px;
+                width: 250px;
+                border: 1px solid black;
+            }
+            .inputie{
+                padding: 15px;
+                border-radius: 5px;
+                width: 72px;
+                border: 1px solid black;
+            }
+            .inputt{
+                height: 20px;
+                width: 20px;
+            }
+            .inputtt{
+                padding: 15px;
+                border-radius: 5px;
+                width: 180px;
+                border: 1px solid black;
+            }
+            .inpu{
+                font-size: 20px;
+            }
+            #inn1,#inn2,#inn3,#inn4{
+                border: 3px solid aliceblue;
+                width: 250px;
+            }
+            .padd{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            [contenteditable] {
+                outline: 0px solid transparent;
+            }
+            .reg1{
+                background: #fff;
+                 display: grid;
+                 justify-content: center;
+                 margin-left: 20%;
+                 margin-right: 20%;
+                align-items: center;
+                padding: 1.8rem;
+                border-radius: 5px;
+                margin-top: 1rem;
+                box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.018);
+                grid-template-columns:repeat(2,1fr);
+            }
+            
+            .reg1 label{
+                display:contents;
+                text-align: right;
+                color:black;
+                font-size: 20px;
+            }
+            
+            .reg11{
+                background: #fff;
+                 margin-left: 20%;
+                 margin-right: 20%;
+                align-items: center;
+                padding: 1.8rem;
+                border-radius: 5px;
+                margin-top: 1rem;
+                box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.018);
+            }
+            
+            .reg11 label{
+                display:contents;
+                text-align: right;
+                color:black;
+                font-size: 20px;
+            }
+            .reg111{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 5%;
+            }
+            .develope label{
+                display:inline-block;
+                
+            }
+            .develope{
+                background: #fff;
+                 display:grid;
+                 justify-content: center;
+                 margin-left: 20%;
+                 margin-right: 20%;
+                align-items: center;
+                padding: 1.8rem;
+                border-radius: 2rem;
+                margin-top: 1rem;
+                box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.018);
+                grid-template-columns:repeat(2,1fr);
+            }
+            .transport{
+                background: #fff;
+                 display:block;
+                 justify-content: center;
+                 margin-left: 20%;
+                 margin-right: 20%;
+                align-items: center;
+                padding: 1.8rem;
+                border-radius: 5px;
+                margin-top: 1rem;
+                box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.018);
+            }
+            .owner,.esti,.options{
+                background: #fff;
+                 display:block;
+                 justify-content: center;
+                 margin-left: 20%;
+                 margin-right: 20%;
+                align-items: center;
+                padding: 1.8rem;
+                border-radius: 5px;
+                margin-top: 1rem;
+                box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.018);
+                
+            }
+            .options,.esti{
+                font-size: 20px;
+            }
+            .extra{
+                margin-left: 13%;
+            }
+            .dummy{
+                margin-left:20%;
+            }
+            .textarea{
+                resize:none;
+                width: 80%;
+                border-radius: 5px;
+            }
+            #abc{
+                margin-right:25%;
+            }
+        
+            .split{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                margin-left: 5%;
+            }
+            .move{
+                margin-left: 13%;
+            }
+            .butt{
+  background-color: #1d9acc; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button{
+    background-color: #5dbea3; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+@media screen and (max-width: 1500px) {
+    .transport , .reg1 , .owner , .esti , .reg11 , .options{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .transport , .reg1 , .owner , .esti , .reg11 , .options{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .transport , .reg1 , .owner , .esti , .reg11 , .options{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .table{
+        width: 700px;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 800px) {
+    .table{
+        width: 600px;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 700px) {
+    .table{
+        width: 500px;
+        overflow-x: scroll;
+    }
+    .reg1 , .split {
+        display: block;
+    }
+    .br{
+        display: none;
+    }
+    h2{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .table{
+        width: 400px;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 500px) {
+    .table{
+        width: 300px;
+        overflow-x: scroll;
+    }
+}
+
+            
+        </style>
+
+
+
+</head>
+
+<body>
+    
+    <form name="form" method="post" action="user_application.php" enctype="multipart/form-data" >
+        
+        <div class="reg1" style="margin-top:7%;">
+            
+            <div class="dummy" id="abc">
+                <CENTER><h2>விண்ணப்பம்</h2></CENTER><br><br>
+                <!--<label for="orgname">Organization Name</label>
+                <input type="text" id="fn1" name="orgname" required  placeholder="Eg:abc company">-->
+                <label>நிறுவன பெயர் <span style="color: red;">*</span></label>
+                <br><br>
+                <div id="inn1">
+                    <input name="orgname" id="in1" autocomplete="off" contenteditable="true" onclick="disappear(1)" onfocusout="appear(1)" class="input" type="text" placeholder="Eg:ஏபிசி நிறுவனம்" required>
+                </div>
+                <br><br>
+
+            </div>
+        
+        
+        <div class="dummy">
+            <br class="br"><br class="br"><br class="br"><br class="br"><br class="br">
+            <!-- <label for="addln1">Door No.</label>
+            <input type="text" id="fn2" name="doornum" required style="margin-top:10px;" placeholder="Eg: 2/179"> -->
+            <label>கதவு எண். <span style="color: red;">*</span></label>
+                <br><br>
+                <div id="inn2">
+                    <input name="doornum" id="in2" autocomplete="off" contenteditable="true" onclick="disappear(2)" onfocusout="appear(2)" class="input" type="text" placeholder="எ.கா: 2/179" required>
+                </div>
+                <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="addln1">Street Name</label>
+            <input type="text" id="fn2" name="streetname" required style="margin-top:10px;" placeholder="Eg: ABC Nagar"> -->
+            <label>தெருவின் பெயர்<span style="color: red;">*</span></label>
+                <br><br>
+                <div id="inn3">
+
+                    <input name="streetname" id="in3" autocomplete="off" contenteditable="true" onclick="disappear(3)" onfocusout="appear(3)" class="input" type="text" placeholder="எ.கா: ஏபிசி நகர்" required>
+                </div>
+                <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="addln2">Address Line 2</label>
+            <input type="text" id="fn3" name="addln2" required style="margin-top:10px;" placeholder="Eg:Locality,City"> -->
+            <label>வட்டாரம்<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn4">
+                
+                <input name="locality" id="in4" autocomplete="off" contenteditable="true" onclick="disappear(4)" onfocusout="appear(4)" class="input" type="text" placeholder="எ.கா: உள்ளூர்" required>
+            </div>
+            <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="addln2">Address Line 2</label>
+            <input type="text" id="fn3" name="addln2" required style="margin-top:10px;" placeholder="Eg:Locality,City"> -->
+            <label>மாவட்டம்<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn700">
+                
+                <input name="district" id="in700" autocomplete="off" contenteditable="true" onclick="disappear(700)" onfocusout="appear(700)" class="input" type="text" placeholder="எ.கா:டெல்லி" required>
+            </div>
+            <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="pincode">PIN Code</label>
+            <input type="number" id="fn4" name="pincode" required style="margin-top:10px;" placeholder="Eg:6000XX"> -->
+            <label>அஞ்சல் குறியீடு<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn5">
+                
+                <input name="pincode" id="in5" autocomplete="off" contenteditable="true" onclick="disappear(5)" onfocusout="appear(5)" class="input" type="number" placeholder="எ.கா:6000X" required>
+            </div>
+            <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="inputState" style="height:40px;">State</label>
+            <select class="state" id="fn5" name="state">
+                <option value="SelectState" disabled selected >Select State</option>
+                <option value="Andra Pradesh">Andra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madya Pradesh">Madya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Orissa">Orissa</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttaranchal">Uttaranchal</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadeep">Lakshadeep</option>
+                <option value="Pondicherry">Pondicherry</option>
+            </select> -->
+
+            <label>மாநிலம் <span style="color: red;">*</span></label><br><br>
+                <div id="inn6">
+                    <select name="state" id="in6" autocomplete="off" contenteditable="true" onclick="disappear(6)" onfocusout="appear(6)" class="input" required>
+                        <div class="padd"><option selected disabled value="volvo">மாநிலத்தை தேர்ந்தெடுக்கவும்</option></div>
+                        <div class="padd"><option value="Andra Pradesh">ஆந்திரப் பிரதேசம்</option></div>
+                        <div class="padd"><option value="Arunachal Pradesh">அருணாச்சல பிரதேசம்</option></div>
+                        <div class="padd"><option value="Assam">அசாம்</option></div>
+                        <div class="padd"><option value="Bihar">பீகார்</option></div>
+                        <div class="padd"><option value="Chhattisgarh">சத்தீஸ்கர்</option></div>
+                        <div class="padd"><option value="Goa">கோவா</option></div>
+                        <div class="padd"><option value="Gujarat">குஜராத்</option></div>
+                        <div class="padd"><option value="Haryana">ஹரியானா</option></div>
+                        <div class="padd"><option value="Himachal Pradesh">ஹிமாச்சல பிரதேசம்</option></div>
+                        <div class="padd"><option value="Jammu and Kashmir">ஜம்மு காஷ்மீர்</option></div>
+                        <div class="padd"><option value="Jharkhand">ஜார்கண்ட்</option></div>
+                        <div class="padd"><option value="Karnataka">கர்நாடகா</option></div>
+                        <div class="padd"><option value="Kerala">கேரளா</option></div>
+                        <div class="padd"><option value="Madya Pradesh">மத்திய பிரதேசம்</option></div>
+                        <div class="padd"><option value="Maharashtra">மகாராஷ்டிரா</option></div>
+                        <div class="padd"><option value="Manipur">மணிப்பூர்</option></div>
+                        <div class="padd"><option value="Meghalaya">மேகாலயா</option></div>
+                        <div class="padd"><option value="Mizoram">மிசோரம்</option></div>
+                        <div class="padd"><option value="Nagaland">நாகாலாந்து</option></div>
+                        <div class="padd"><option value="Orissa">ஒரிசா</option></div>
+                        <div class="padd"><option value="Punjab">பஞ்சாப்</option></div>
+                        <div class="padd"><option value="Rajasthan">ராஜஸ்தான்</option></div>
+                        <div class="padd"><option value="Sikkim">சிக்கிம்</option></div>
+                        <div class="padd"><option value="Tamil Nadu">தமிழ்நாடு</option></div>
+                        <div class="padd"><option value="Telangana">தெலுங்கானா</option></div>
+                        <div class="padd"><option value="Tripura">திரிபுரா</option></div>
+                        <div class="padd"><option value="Uttaranchal">உத்தராஞ்சல்</option></div>
+                        <div class="padd"><option value="Uttar Pradesh">உத்தரப்பிரதேசம்</option></div>
+                        <div class="padd"><option value="West Bengal">மேற்கு வங்காளம்</option></div>
+                        <div class="padd"><option disabled style="background-color:#aaa; color:#fff">யூனியன் பிரதேசங்கள்</option></div>
+                        <div class="padd"><option value="Andaman and Nicobar Islands">அந்தமான் நிக்கோபார் தீவுகள்</option></div>
+                        <div class="padd"><option value="Chandigarh">சண்டிகர்</option></div>
+                        <div class="padd"><option value="Dadar and Nagar Haveli">தாதர் மற்றும் நகர் ஹவேலி</option></div>
+                        <div class="padd"><option value="Daman and Diu">டாமன் மற்றும் டையூ</option></div>
+                        <div class="padd"><option value="Delhi">டெல்லி</option></div>
+                        <div class="padd"><option value="Lakshadeep">லட்சதீப்</option></div>
+                        <div class="padd"><option value="Pondicherry">பாண்டிச்சேரி</option></div>
+
+                    </select>
+                </div>
+                <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="phnum">Phone number</label>
+            <input type="number" id="fn6" name="phnum" required style="margin-top:10px;" placeholder="Eg:+91 9XXXXXXXX2"> -->
+            <label>தொலைபேசி எண்<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn7">
+                
+                <input name="phnum" id="in7" autocomplete="off" contenteditable="true" onclick="disappear(7)" onfocusout="appear(7)" class="input" type="number" placeholder="எ.கா:9XXXXXXXX2"required>
+            </div>
+            <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="faxnum"> FAX number</label>
+            <input type="number" id="fn7" name="faxnum" required style="margin-top:10px;" placeholder="Eg:555-123-4567"> -->
+            <label> தொலைநகல் எண்<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn8">
+                
+                <input name="faxnum" id="in8" autocomplete="off" contenteditable="true" onclick="disappear(8)" onfocusout="appear(8)" class="input" type="number" placeholder="எ.கா:5551234567"required>
+            </div>
+            <br><br>
+        </div>
+        <div class="dummy">
+            <!-- <label for="email">Email ID</label>
+            <input type="text" id="fn8" name="email" required style="margin-top:10px;" placeholder="Eg:sih@gmail.com"> -->
+            <label> மின்னஞ்சல்<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn9">
+                
+                <input name="email" id="in9" autocomplete="off" contenteditable="true" onclick="disappear(9)" onfocusout="appear(9)" class="input" type="email" placeholder="எ.கா:sih@gmail.com"required>
+            </div>
+            <br><br>
+        </div><hr>
+    </div>
+        <!-- <label>NAME OF THE PROJECT:</label>
+        <input type="text" name="projectname"> -->
+
+    <div class="transport">
+        <br>
+        <br>
+        <div class="split">
+
+            <div>
+        <label><b> திட்டத்தின் பெயர்:</b><span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn10">
+                
+                <input name="projectname" id="in10" autocomplete="off" contenteditable="true" onclick="disappear(10)" onfocusout="appear(10)" class="input" type="text" placeholder="எ.கா:SIH" required>
+            </div>
+            <br><br>
+        </div>
+        <div>
+            <label><b>திட்ட காலக்கெடு </b><span style="color: red;">*</span></label><br><br>
+                 <div id="inn11">
+                     <input name="deadline" id="in11" autocomplete="off" contenteditable="true" onclick="disappear(11)" onfocusout="appear(11)" class="input" type="date" placeholder="திட்ட காலக்கெடு" required>
+                 </div>
+                 <br><br>
+                </div>
+            </div>
+            <h3 class="hubs">போக்குவரத்து மையங்கள்:<span style="color: red;">*</span>
+                <br><br> </h3>
+            <div class="table">
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>மயில்கல்</th>
+                        <th>பெயர்</th>
+                        <th>இருப்பிட இணைப்பு</th>
+                        <th>தளத்தில் இருந்து தூரம்</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>காற்று/கடல் துறைமுகம்</b></td>
+                        <td>
+                            <div id="inn12">
+                    
+                                <input name="air_name" id="in12" autocomplete="off" contenteditable="true" onclick="disappear(12)" onfocusout="appear(12)" class="inputtt" type="text" placeholder="எ.கா:சென்னை சர்வதேசம்" >
+                            </div>
+                        </td>
+                        <td>
+                            <!-- <input type="text" name="air_location"> -->
+                            <div id="inn13">
+                    
+                                <input name="air_location" id="in13" autocomplete="off" contenteditable="true" onclick="disappear(13)" onfocusout="appear(13)" class="inputtt" type="text" placeholder="எ.கா:இணைப்பு">
+                            </div>
+                        </td>
+                        <td>
+                            <!-- <input type="text" name="air_distance"> -->
+                            <div id="inn14">
+                    
+                                <input name="air_distance" id="in14" autocomplete="off" contenteditable="true" onclick="disappear(14)" onfocusout="appear(14)" class="inputtt" type="number" placeholder="எ.கா:23km">
+                            </div>
+
+                        </td>
+                        <td>
+                            <!-- <select name="air_dist_km">
+                                <option value="km">km</option>
+                                <option value="m">m</option>
+                            </select> -->
+                            <div id="inn401">
+                                <select name="air_dist_km" id="in401" autocomplete="off" contenteditable="true" onclick="disappear(401)" onfocusout="appear(401)" class="inputie">
+                                    
+                                    <div class="padd"><option value="km">கி.மீ</option></div>
+                                    <div class="padd"><option value="m">மீ</option></div>
+                                </select>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>தொடர்வண்டி நிலையம்</b></td>
+                        <td>
+                            <!-- <input type="text" name="rail_name"> -->
+                            <div id="inn15">
+                    
+                                <input name="rail_name" id="in15" autocomplete="off" contenteditable="true" onclick="disappear(15)" onfocusout="appear(15)" class="inputtt" type="text" placeholder="எ.கா:மத்திய">
+                            </div>
+
+                        </td>
+                        <td>
+                            <!-- <input type="text" name="rail_location"> -->
+                            <div id="inn16">
+                    
+                                <input name="rail_location" id="in16" autocomplete="off" contenteditable="true" onclick="disappear(16)" onfocusout="appear(16)" class="inputtt" type="text" placeholder="எ.கா:இணைப்பு">
+                            </div>
+                        </td>
+                        <td>
+                            <!-- <input type="text" name="rail_distance"> -->
+                            <div id="inn17">
+                    
+                                <input name="rail_distance" id="in17" autocomplete="off" contenteditable="true" onclick="disappear(17)" onfocusout="appear(17)" class="inputtt" type="number" placeholder="எ.கா:36km">
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <!-- <select name="rail_dist_km">
+                                <option value="km">km</option>
+                                <option value="m">m</option>
+                            </select> -->
+                            <div id="inn402">
+                    <select name="rail_dist_km" id="in402" autocomplete="off" contenteditable="true" onclick="disappear(402)" onfocusout="appear(402)" class="inputie">
+                        
+                        <div class="padd"><option value="km">கி.மீ</option></div>
+                        <div class="padd"><option value="m">மீ</option></div>
+                    </select>
+                </div>
+                
+
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>பேருந்து நிலையம்</b></td>
+                        <td>
+                            <!-- <input type="text" name="bus_name"> -->
+                            <div id="inn18">
+                    
+                                <input name="bus_name" id="in18" autocomplete="off" contenteditable="true" onclick="disappear(18)" onfocusout="appear(18)" class="inputtt" type="text" placeholder="செங்கல்து பழைய பஸ் ஸ்டாப் ">
+                            </div>
+
+                        </td>
+                        <td>
+                            <!-- <input type="text" name="bus_location"> -->
+                            <div id="inn19">
+                    
+                                <input name="bus_location" id="in19" autocomplete="off" contenteditable="true" onclick="disappear(19)" onfocusout="appear(19)" class="inputtt" type="text" placeholder="எ.கா:இணைப்பு">
+                            </div>
+
+                        </td>
+                        <td>
+                            <!-- <input type="text" name="bus_distance"> -->
+                            <div id="inn20">
+                    
+                                <input name="bus_distance" id="in20" autocomplete="off" contenteditable="true" onclick="disappear(20)" onfocusout="appear(20)" class="inputtt" type="number" placeholder="எ.கா:40km">
+                            </div>
+                        </td>
+                        <td>
+                            <!-- <select name="bus_dist_km">
+                                <option value="km">km</option>
+                                <option value="m">m</option>
+                            </select> -->
+                            <div id="inn403">
+                                <select name="bus_dist_km" id="in403" autocomplete="off" contenteditable="true" onclick="disappear(403)" onfocusout="appear(403)" class="inputie">
+                                    
+                                    <div class="padd"><option value="km">கி.மீ</option></div>
+                                    <div class="padd"><option value="km">மீ</option></div>
+                                    
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="owner">
+            <div class="move">
+            <h3>நில உரிமை:<span style="color: red;">*</span></h3>
+                   <!-- <input type="radio" name="landowner" >
+                   <label>OWNED</label><br>
+                   <input type="radio"  name="landowner" >
+                   <label>LEASED</label>    -->
+                   <input type="radio" id="inn201" class="inputt" name="landowner" value="owned" required>
+                   <label>உரிமை உள்ளது</label>
+                   <br><br>
+                   <input type="radio" id="inn202" class="inputt" name="landowner" value="leased" required>
+                  
+                           <label>குத்தகைக்கு விடப்பட்டது </label>
+                           <br><br>
+               <h3>திட்டத்தை செயல்படுத்த நிலம் உடனடியாக கிடைக்குமா:<span style="color: red;">*</span></h3>
+                   <!-- <input type="radio" name="ready" > -->
+                   <input type="radio" id="inn203" class="inputt" name="ready" value="yes" required>
+                   <!-- <label>YES</label><br> -->
+                   <label>YES</label>
+                   <br><br>
+                   <input type="radio" id="inn204" class="inputt" name="ready" value="no" required>
+                  <!-- <label >NO</label>-->
+                  <label>NO</label>
+                   <br><br>
+               <h3>பயன்பாடுகளை வழங்குதல்:<span style="color: red;">*</span></h3>
+                   <!-- <input type="checkbox"  name="utilities" > -->
+                   <input type="checkbox" id="inn205" class="inputt" name="utilities1" value="Tennis" required>
+                   <!-- <label >POWER SUPPLY</label><br> -->
+                   <label for="POWER SUPPLY" class="inpu">POWER SUPPLY</label>
+                           <br><br>
+                   <!-- <input type="checkbox"  name="utilities" > -->
+                   <input type="checkbox" id="inn206" class="inputt" name="utilities2" value="Tennis" required>
+                   <!-- <label >WATER SUPPLY</label><BR> -->
+                       <label for="WATER SUPPLY" class="inpu">WATER SUPPLY</label>
+                       <br><br>   
+                   <!-- <input type="checkbox"  name="utilities" > -->
+                   <input type="checkbox" id="inn207" class="inputt" name="utilities3" value="Tennis" required>
+           
+                   <!-- <label >DRAINAGE FACILITIES</label> -->
+                   <label for="DRAINAGE FACILITIES" class="inpu">DRAINAGE FACILITIES</label>
+                   <br><br> 
+                </div>
+
+               
+           </div>
+        <div class="esti">
+            <div class="move">
+        <h3>மதிப்பீடு:</h3>
+            <!-- <label>Estimated cost:</label>
+            <input type="text"  name="estimation" ><label> Rs.</label>
+            <br><br> -->
+            <label> மதிப்பிடப்பட்ட செலவு:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn208">
+                
+                <input name="estimation" id="in208" autocomplete="off" contenteditable="true" onclick="disappear(208)" onfocusout="appear(208)" class="input" type="number" placeholder="எ.கா:100000" required>
+            </div>
+            <br><br><br>
+            <label>திட்ட செலவுக்கான சான்று:</label>
+            <input type="file" name="evidence" required/>
+            <br><br>
+            <label>திட்டத்தின் மேற்கோள்கள்:</label>
+            <input type="file" name="quotation" required/>
+            <br><br>
+            <label>திட்டத்தின் திட்ட திட்டங்கள்:</label>
+            <input type="file"  name="schematic_plan" required/>
+            <br><br><br><br>
+            <!-- <label>Centre's share excluding above:</label>
+            <input type="text"  name="centre_share" ><label> Rs.</label> -->
+            <label> மேலே உள்ளதைத் தவிர்த்து மையத்தின் பங்கு:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn209">
+                
+                <input name="centre_share" id="in209" autocomplete="off" contenteditable="true" onclick="disappear(209)" onfocusout="appear(209)" class="input" type="number" placeholder="எ.கா::500000" required>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+    </div>
+        <div class="reg11">
+            <!-- <h3>PROJECT DEVELOPMENT</h3> -->
+            
+            <!--<label>Scope of the project:</label>
+             <input type="text" name="scope">-->
+            <div class="dummy">
+                            <br><br>
+                            <label>திட்டத்தின் நோக்கம்<span style="color: red;">*</span></label><br><br>
+                            <div id="inn101">
+                                <textarea class="textarea" rows="10" name="scope" id="in101" autocomplete="off" contenteditable="true" onclick="disappear(101)" onfocusout="appear(101)" class="input" placeholder="திட்டத்தின் நோக்கம் " required></textarea>
+                            </div>
+            </div>
+            
+        
+        
+            
+           <!-- <label>Site plans:</label>
+            <input type="text" name="plan">-->
+            <div class="dummy">
+                <!-- <br><br>
+            <label>Site plans <span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn102">
+                <input name="plan" id="in102" autocomplete="off" contenteditable="true" onclick="disappear(102)" onfocusout="appear(102)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+            <br>
+                            <label>தளத் திட்டங்கள் <span style="color: red;">*</span></label><br><br>
+                            <div id="inn102">
+                                <textarea class="textarea" rows="10" name="plan" id="in102" autocomplete="off" contenteditable="true" onclick="disappear(102)" onfocusout="appear(102)" class="input" placeholder="தளத் திட்டங்கள் " required></textarea>
+                            </div><br><br>
+        </div>
+            
+            
+          <!--  <label>Methods for reducing cost:</label>
+            <input type="text" name="methods">
+            <br><br>-->
+            <div class="dummy">
+            <!-- <label>Methods for reducing cost <span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn103">
+                <input name="methods" id="in103" autocomplete="off" contenteditable="true" onclick="disappear(103)" onfocusout="appear(103)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+                            <label>செலவைக் குறைப்பதற்கான முறைகள் <span style="color: red;">*</span></label><br><br>
+                            <div id="inn103">
+                                <textarea class="textarea" rows="10" name="methods" id="in103" autocomplete="off" contenteditable="true" onclick="disappear(103)" onfocusout="appear(103)" class="input" placeholder="செலவைக் குறைப்பதற்கான முறைகள் " required></textarea>
+                            </div><br>
+        </div>
+            
+        
+            <!--<label>Facility management:</label>
+            <input type="text" name="facility">
+            <br><br>-->
+            <div class="dummy">
+            <br>
+                            <label>வசதி மேலாண்மை: <span style="color: red;">*</span></label><br><br>
+                            <div id="inn104">
+                                <textarea class="textarea" rows="10" name="facility" id="in104" autocomplete="off" contenteditable="true" onclick="disappear(104)" onfocusout="appear(104)" class="input" placeholder="வசதி மேலாண்மை " required></textarea>
+                            </div><br><br>
+        </div>
+            
+        
+           <!-- <label>Employment Oppurtinity:</label>
+            <input type="text" name="oppurtinity">
+            <br><br>-->
+            <div class="dummy">
+            <!-- <label>Employment Oppportunity<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn105">
+                <input name="Opportunity" id="in105" autocomplete="off" contenteditable="true" onclick="disappear(105)" onfocusout="appear(105)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br> -->
+                            <label>வேலை வாய்ப்பு<span style="color: red;">*</span></label><br><br>
+                            <div id="inn105">
+                                <textarea class="textarea" rows="10" name="oppurtinity" id="in105" autocomplete="off" contenteditable="true" onclick="disappear(105)" onfocusout="appear(105)" class="input" placeholder="வேலை வாய்ப்பு " required></textarea>
+                            </div><br><br>
+        </div>
+        </div>
+            <div class="reg1">
+        
+           <!-- <label>No of centres:</label>
+            <input type="number" name="no_of_centre">
+            <br><br>-->
+            <div class="dummy">
+            <label>மையங்களின் எண்ணிக்கை:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn106">
+                <input name="no_of_centre" id="in106" autocomplete="off" contenteditable="true" onclick="disappear(106)" onfocusout="appear(106)" class="input" type="number" placeholder="Enter no. of centres" required/>
+            </div>
+            <br><br>
+        </div>
+            
+        
+           <!-- <label>Availability of centre:</label>
+            <label>YES:</label>
+            <input type="radio" name="availability">-->
+            <div class="dummy">
+            <label>மையத்தின் கிடைக்கும் தன்மை:<span style="color: red;">*</span></label>
+            <br>
+            <br>
+            
+            
+                <input name="availability" id="in107" autocomplete="off" contenteditable="true" onclick="disappear(107)" onfocusout="appear(107)" class="inputt" type="radio" required>
+                <label class="inpu">YES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            
+        
+            
+        
+        
+            <!-- <label>NO:</label>
+            <input type="radio" name="availability">
+            <br><br> -->
+            
+           
+            
+            <input name="availability" id="in108" autocomplete="off" contenteditable="true" onclick="disappear(108)" onfocusout="appear(108)" class="inputt" type="radio" required>
+            <label class="inpu">NO</label>
+            <br><br>
+        </div>
+            
+        
+            <!-- <label>No of Players:</label>
+            <input type="number" name="no_of_players">
+            <br><br> -->
+            <div class="dummy">
+            <label>வீரர்களின் எண்ணிக்கை: <span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn109">
+                <input name="no_of_players" id="in109" autocomplete="off" contenteditable="true" onclick="disappear(109)" onfocusout="appear(109)" class="input" type="number" placeholder="வீரர்களின் எண்ணிக்கை" required>
+            </div>
+            <br><br>
+        </div>
+            
+        
+            <!-- <label>User base:</label>
+            <input type="text" name="user_base">
+            <br><br> -->
+            <div class="dummy">
+            <label>பயனர் அடிப்படை: <span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn110">
+                <input name="user_base" id="in110" autocomplete="off" contenteditable="true" onclick="disappear(110)" onfocusout="appear(110)" class="input" type="number" placeholder="பயனர் அடிப்படை:" required>
+            </div>
+            <br><br>
+        </div>
+           </div>
+           <div class="reg11" >
+            <!-- <label>Need of Project:</label>
+            <input type="text" name="need">
+            <br><br> -->
+            <div class="dummy">
+            <!-- <label>Need of Project: <span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn111">
+                <input name="need" id="in111" autocomplete="off" contenteditable="true" onclick="disappear(111)" onfocusout="appear(111)" class="input" type="text" placeholder="Enter need of the project" required>
+            </div>
+            <br><br> -->
+            <label>திட்டத்தின் தேவை: <span style="color: red;">*</span></label><br><br>
+            <div id="inn111">
+                <textarea class="textarea" rows="10" name="need" id="in111" autocomplete="off" contenteditable="true" onclick="disappear(111)" onfocusout="appear(111)" class="input" placeholder="திட்டத்தின் தேவை: " required></textarea>
+            </div><br><br>
+        </div>
+            
+            <!-- <label>Situation of project undeer natural disaster:</label>
+            <input type="text" name="situation_disaster">
+            <br><br> -->
+            <div class="dummy">
+            <!-- <label>Situation of project undeer natural disaster:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn112">
+                <input name="situation_disaster" id="in112" autocomplete="off" contenteditable="true" onclick="disappear(112)" onfocusout="appear(112)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+            <label>இயற்கை பேரழிவின் கீழ் திட்டத்தின் நிலைமை: <span style="color: red;">*</span></label><br><br>
+            <div id="inn112">
+                <textarea class="textarea" rows="10" name="situation_disaster" id="in112" autocomplete="off" contenteditable="true" onclick="disappear(112)" onfocusout="appear(112)" class="input" placeholder="இயற்கை பேரழிவின் கீழ் திட்டத்தின் சூழ்நிலையை உள்ளிடவும்" required></textarea>
+            </div><br><br>
+        </div>
+           
+            <!-- <label>How it increases participation:</label>
+            <input type="text" name="participation">
+            <br><br> -->
+            <div class="dummy">
+            <!-- <label>How it increases participation:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn113">
+                <input name="participation" id="in113" autocomplete="off" contenteditable="true" onclick="disappear(113)" onfocusout="appear(113)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+            <label>பங்கேற்பை எவ்வாறு என்பதை உள்ளிடவும்: <span style="color: red;">*</span></label><br><br>
+            <div id="inn113">
+                <textarea class="textarea" rows="10" name="participation" id="in113" autocomplete="off" contenteditable="true" onclick="disappear(113)" onfocusout="appear(113)" class="input" placeholder="பங்கேற்பை எவ்வாறு என்பதை உள்ளிடவும் " required></textarea>
+            </div><br><br>
+        </div>
+           
+            <!-- <label>Oppurtunities to boost participation:</label>
+            <input type="text" name="boost">
+            <br><br> -->
+            <div class="dummy">
+            <!-- <label>Oppurtunities to boost participation:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="inn114">
+                <input name="boost" id="in114" autocomplete="off" contenteditable="true" onclick="disappear(114)" onfocusout="appear(114)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+            <label>வாய்ப்புகளுடன் பார்ட்டிச்சிபதிஒனை அதிகரிக்கவும்: <span style="color: red;">*</span></label><br><br>
+            <div id="inn114">
+                <textarea class="textarea" rows="10" name="boost" id="in114" autocomplete="off" contenteditable="true" onclick="disappear(114)" onfocusout="appear(114)" class="input" placeholder="பங்கேற்பை அதிகரிக்க வாய்ப்புகளை உள்ளிடவும் " required></textarea>
+            </div><br><br>
+        </div>
+            
+            <!-- <label>Benefits of project:</label>
+            <input type="text" name="benefits">
+            <br><br> -->
+            <div class="dummy">
+            <!-- <label>Benefits of project:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="115">
+                <input name="benefits" id="in115" autocomplete="off" contenteditable="true" onclick="disappear(115)" onfocusout="appear(115)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+            <label>திட்டத்தின் நன்மைகள்: <span style="color: red;">*</span></label><br><br>
+            <div id="inn115">
+                <textarea class="textarea" rows="10" name="benefits" id="in115" autocomplete="off" contenteditable="true" onclick="disappear(115)" onfocusout="appear(115)" class="input" placeholder="திட்டத்தின் பலன்களை உள்ளிடவும் " required></textarea>
+            </div><br><br>
+        </div>
+            
+            <!-- <label>How gender equality is achieved:</label>
+            <input type="text" name="gender_equality">
+            <br><br> -->
+            <div class="dummy">
+            <!-- <label>How gender equality is achieved:<span style="color: red;">*</span></label>
+            <br><br>
+            <div id="116">
+                <input name="gender_equality" id="in116" autocomplete="off" contenteditable="true" onclick="disappear(116)" onfocusout="appear(116)" class="input" type="text" placeholder="Enter">
+            </div>
+            <br><br> -->
+            <label>பாலின சமத்துவம் எவ்வாறு அடையப்படுகிறது: <span style="color: red;">*</span></label><br><br>
+            <div id="inn116">
+                <textarea class="textarea" rows="10" name="gender_equality" id="in116" autocomplete="off" contenteditable="true" onclick="disappear(116)" onfocusout="appear(116)" class="input" placeholder="பாலின சமத்துவம் எவ்வாறு அடையப்படுகிறது என்பதை உள்ளிடவும் " required></textarea>
+            </div><br><br>
+        </div>
+           
+        </div>
+        
+        <div class="options">
+            <div class="extra">
+            <label for="sport">விளையாட்டைத் தேர்ந்தெடுங்கள் :  </label><br><br>
+            <div class="wrapper">
+                <div class="menu">
+                    <select id="name" class="opt" name="sports_category" required>
+                        <option disabled selected>விளையாட்டுத் துறையைத் தேர்ந்தெடுக்கவும்: </option>
+                        <option value="Athletic">செயற்கை தடகளப் பாதை </option>
+                        <option value="Hockey">செயற்கை ஹாக்கி மைதானம்</option>
+                        <option value="Football">Sசெயற்கை தரை கால்பந்து மைதானம் </option>
+                        <option value="Hall">பல்நோக்கு மண்டபம்  </option>
+                        <option value="Pool">நீச்சல் குளம் </option>
+                    </select>
+                </div>
+            
+        
+            <div class="content">
+                <div id="Athletic" class="data">
+                    <p>1. International standard size IAAF approved with Class II 
+                        certification synthetic athletic field complete including 
+                        foundation, sub base & water hydrants at regular 
+                        intervals.<br>
+                    2. No. of lanes – 8<br>
+                    3. Change room for boys & girls with toilet block<br>
+                    4. Facility for Hammer throw, Javelin throw, discus throw 
+                        & Short put<br>
+                    5. Facility for High jump<br>
+                    6. Facility for Pole vault, Long jump & Triple jump on both 
+                        sides<br>
+                    7. Facility for steeple chase track with water jump<br>
+                    8. RCC drain with CC cover<br>
+                    9. Handbook on field of play and specifications for Sports 
+                        Infrastructure at SAI Centres may be referred for guidance. 
+                        (The Soft copy of the Handbook is available on 
+                        SAI website.)<br>
+                        
+                        
+        
+                </div>
+                <div id="Hockey" class="data">
+                    <p>1. International standard size FIH approved with 
+                        certification synthetic hockey field including foundation 
+                        & sub base<br>
+                    2. Enclosures for judges/players<br>
+                    3. Water sprinkler system<br>
+                    4. Mild steel chain link fencing<br>
+                    5. Tube well – 1 No.<br>
+                    6. RCC sump of 60,000 ltr. Water capacity<br>
+                    7. CC Paver blocks of M-35 grade, 50mm thick all around<br>
+                    8. Change rooms for boys & girls with toilet block<br> 
+                    9. RCC drain with plastic coated steel covers<br>
+                    10. Pump room construction including electrical works, i.e.
+                     No. motors of 40 H.P. & electrical panels complete<br>
+                    11. Foot wash trough<br>
+                    12. Handbook on field of play and specifications for Sports 
+                        Infrastructure at SAI Centres may be referred for guidance. 
+                        (The Soft copy of the Handbook is available on SAI 
+                        website. link)</p>
+                        
+                    
+                </div>
+                <div id="Football" class="data">
+                    <p>1. International standard size FIFA approved synthetic Football 
+                        ground including sub base.<br> 
+                        2. Mild steel chain link fencing<br>
+                        3. CC paver block footpath all around<br>
+                        4. Change room for boys & girls with toilet block<br> 
+                        5. RCC drain with CI grating<br>
+                        6. Handbook on field of play and specifications for Sports 
+                        Infrastructure at SAI Centres may be referred for guidance. (The 
+                        Soft copy of the Handbook is available on SAI website. link)</p>
+                        
+                </div>
+                <div id="Hall" class="data">
+                    <p>1. Imported maple wood flooring, brick walls Standard steel roof, 
+                        truss frames covered with pre-coated galvanized iron profile 
+                        sheets, height 12.5M, lighting, Cat walk<br>
+                        2. Change room for boys & girls with toilet block.<br> 
+                        3. Handbook on field of play and specifications for Sports 
+                        Infrastructure at SAI Centres may be referred for guidance. (The 
+                        Soft copy of the Handbook is available on SAI website. link)
+                        </p>
+                        
+                </div>
+                <div id="Pool" class="data">
+                    <p>1. Standard size Swimming Pool 50 mtr x 21 mtr minimum depth of 
+                        1 to 1.35 mtr.<br>
+                        2. No. of lanes – 8<br>
+                        3. Lane ropes extending to full length of the course. Colour as per 
+                        FINA rules.<br>
+                        4. Starting Platform of surface area 0.5 mtr x 0.5 mtr. The height of 
+                        platform shall be 0.5 to 0.75 mtr.<br>
+                        5. Filtration Plant and room.<br>
+                        6. Drainage/Gutters, necessary electrical & water supply services to 
+                        be provided.<br>
+                        7. Change room for Boys & Girls with locker facility<br>
+                        8. Store Room & Reception Room.<br>
+                        9. Handbook on field of play and specifications for Sports <br>
+                        Infrastructure at SAI Centres may be referred for guidance. (The 
+                        Soft copy of the Handbook is available on SAI website. link)</p>
+                        
+                </div>
+        
+            </div>
+        </div>
+            <br><br>
+            <label>உங்கள் ஒப்புகை அறிவிப்பைப் பதிவிறக்கி, அதில் கையொப்பமிட்டு கீழே பதிவேற்றவும்</label>
+            <a class="butt" href="1.pdf" download>பதிவிறக்க</a><br><br>
+        <label>அங்கீகாரம் :</label>
+        <input type="file" name="acknowledgement" required/>
+        <br><br>
+    </div><br><br>
+    <center><input type="checkbox" id="confirm" class="inputt" name="confirm" value="confirm" required>
+    <label for="confirm" class="inpu">நான் நியதிகளும் நிபந்தனைகள் ஒத்துகொள்கிறேன்</label></center>
+    <br><br><br>
+    <center><input type="submit" class="button" value="Apply" /><br><br></center>
+    </form>
+</div><br><br>
+
+
+
+
+
+
+
+
+
+    <!--dropdownm<-->
+        <style>
+   .wrapper{
+         /*display: flex;
+        justify-content: top;
+        flex-wrap: wrap;
+        padding: 70px 0;
+        max-width: 400px;
+        margin:0 auto;
+        margin-top: 0%;*/
+        width: 50%;
+        
+    }
+    
+    
+    .opt{
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Poppins';
+        border: none;
+        border-radius: 8px;
+        border: 2px solid #3f51b5;
+        
+    }
+    .content{
+        margin: 30px 0;
+    }
+    .content .data{
+        padding: 25px;
+        background-color: #fff;
+        border:2px solid #8bc34a;
+        border-radius: 8px;
+    }
+    .data{
+        display: none;
+        width: 600px;
+    }
+@media screen and (max-width: 800px) {
+    .data{
+        width: 500px;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 700px) {
+    .data{
+        width: 400px;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 600px) {
+    .data{
+        width: 300px;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 500px) {
+    .data{
+        width: 200px;
+        overflow-x: scroll;
+    }
+}
+    .content .button{
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 20px;
+        margin-left: 45%;
+        margin-top: 20px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  
+}
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+    
+</style>
+<body>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>  $(document).ready(function(){
+        $("#name").on('change',function(){
+            //alert($(this).val());
+            $(".data").hide();
+             $("#"+$(this).val()).fadeIn(700);
+        }).change();        
+    });
+    $(document).ready(function(){
+        $("#but").click('change',function(){
+            //alert($(this).val());
+            $(".data").hide();
+             
+        }).change();        
+    });
+    $(document).ready(function(){
+        $("#hoc").click('change',function(){
+            //alert($(this).val());
+            $(".data").hide();
+            }).change();        
+    });
+    $(document).ready(function(){
+        $("#foot").click('change',function(){
+            //alert($(this).val());
+            $(".data").hide();
+            }).change();        
+    });
+    $(document).ready(function(){
+        $("#hal").click('change',function(){
+            //alert($(this).val());
+            $(".data").hide();
+            }).change();        
+    });
+    $(document).ready(function(){
+        $("#pol").click('change',function(){
+            //alert($(this).val());
+            $(".data").hide();
+            }).change();        
+    });
+
+</script>
+<script>
+    function disappear(id){
+        console.log("in"+id);
+        document.getElementById("in"+id).style.border = "3px solid green";
+        document.getElementById("inn"+id).style.border = "1px solid aliceblue";
+    }
+    function appear(id){
+        var x = document.getElementById("in"+id).value;
+        console.log(x);
+        if(x){
+            console.log("in"+id);
+            document.getElementById("in"+id).style.border = "1px solid black";
+            document.getElementById("inn"+id).style.border = "3px solid aliceblue";
+        }
+        else{
+            console.log("uhvosovjsovjsoi");
+            document.getElementById("in"+id).style.border = "3px solid red";
+            document.getElementById("inn"+id).style.border = "1px solid aliceblue";
+        }
+    }
+</script>
+
+</body>
+<body>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-ico" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="intro">
+            Hi !! I am here to assist you !!
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../chatbot/static/scripts/responses.js"></script>
+<script src="../chatbot/static/scripts/chat.js"></script>
+</html>
